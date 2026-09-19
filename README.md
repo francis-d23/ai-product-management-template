@@ -1,92 +1,79 @@
-# Juno PM
+# Juno PM — Rocket Ships Triage AI CoPilot
 
-> _(one-line pitch: what Juno does, for whom, in one sentence)_
+> An AI Associate PM that turns Slack/Notion/Jira chaos into a prioritised top-3 risk list every morning.
 
-_Your name · cohort · date_
+_Francis Delusong · AI PM Cohort · September 2026_
 
-This repo is my final project for the **AI Product Management Certification**. Each module's artefact lives in its own folder; this README is the dashboard and the pitch.
+Repo: https://github.com/francis-d23/ai-product-management-template
 
-**How to use this template:** click **Use this template → Create a new repository**, name it `juno-pm`, and commit one module's artefact per session. Assemble this dashboard with the **Final Project Deliverables Builder** (paste its `README.md` output over this file).
+This repo is my final project for the AI Product Management Certification — **Juno PM**. Each module’s artefact lives in its own folder; this README is the dashboard and the pitch.
 
 ---
 
 ## Module artefacts
 
 ### M1 · Prompting
-- **System prompt** — [`01-prompting/system-prompt.md`](01-prompting/system-prompt.md)
-- **Lovable prototype** — _(share URL)_
+- **System prompt** — [`https://github.com/francis-d23/ai-product-management-template/tree/main/01-prompting`](https://github.com/francis-d23/ai-product-management-template/tree/main/01-prompting)
+- **Prototype** — https://your-build-tool/share/your-juno-prototype
 
 ### M2 · Strategy
-- **Decision matrix** — [`02-strategy/decision-matrix.md`](02-strategy/decision-matrix.md)
-- **AI Strategy one-pager** — [`02-strategy/strategy-one-pager.md`](02-strategy/strategy-one-pager.md)
+- **Decision matrix** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/02-strategy/decision-matrix.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/02-strategy/decision-matrix.md)
+- **AI Strategy one-pager** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/02-strategy/strategy-one-pager.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/02-strategy/strategy-one-pager.md)
 
 ### M3 · RAG / AI PRD
-- **AI PRD** — [`03-rag-prd/prd.md`](03-rag-prd/prd.md)
+- **AI PRD** — [`https://github.com/francis-d23/ai-product-management-template/tree/main/03-rag-prd`](https://github.com/francis-d23/ai-product-management-template/tree/main/03-rag-prd)
 
 ### M4 · AI-Native UX
-- **AI user flow** — [`04-ai-ux/user-flow.md`](04-ai-ux/user-flow.md)
-- **Trust-gap mitigations** — [`04-ai-ux/trust-gaps.md`](04-ai-ux/trust-gaps.md)
+- **AI user flow** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/04-ai-ux/user-flow.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/04-ai-ux/user-flow.md)
+- **Trust-gap mitigations** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/04-ai-ux/trust-gaps.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/04-ai-ux/trust-gaps.md)
 
 ### M5 · Agentic Workflows
-- **Agent Workflow Spec (AWSpec)** — [`05-agentic-workflows/awspec.md`](05-agentic-workflows/awspec.md)
-- **Agent Control Panel** — [`05-agentic-workflows/agent-control-panel.md`](05-agentic-workflows/agent-control-panel.md)
+- **Agent Workflow Spec (AWSpec)** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/05-agentic-workflows/awspec.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/05-agentic-workflows/awspec.md)
+- **Agent Control Panel** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/05-agentic-workflows/agent-control-panel.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/05-agentic-workflows/agent-control-panel.md)
 
-### M6 · Evals & Guardrails
-- **Eval stack** — [`06-evals/eval-stack.md`](06-evals/eval-stack.md)
-- **Human evaluation rubric** — [`06-evals/human-rubric.md`](06-evals/human-rubric.md)
+### M6 · Evals &amp; Guardrails
+- **Eval stack** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/06-evals/eval-stack.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/06-evals/eval-stack.md)
+- **Human evaluation rubric** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/06-evals/human-rubric.md`](https://github.com/francis-d23/ai-product-management-template/blob/main/06-evals/human-rubric.md)
 
 ---
 
 ## PM Execution Plan
 
 ### Where Juno is today
-_____
+- M1–M6 specced and committed.
+- The prototype validates the M1 flow with the team.
+- Automated evals: 200-item golden set drafted, judge prompt validated against 30 items; not yet wired to CI.
+- Human rubric drafted; 2 grader candidates lined up; no calibration round yet.
 
 ### What ships next (next 2 sprints)
-_____
+- Sprint 1: wire the eval harness to CI; staff and calibrate 2 graders; ship the Slack triage tool.
+- Sprint 2: open closed beta with 3 PMs (1 RocketShip, 2 customers); weekly rubric review; instrument abandon-rate.
 
 ### What I watch (dashboards)
-_____
+- Daily: thumbs-down rate, regen rate, hand-off rate.
+- Weekly: human-rubric mean per dimension; refusal hit-rate; cost per run.
+- Per release: golden-set accuracy; format/citation/refusal pass rate.
 
-### Red lines (what blocks shipping — numbers, not feelings)
-_____
+### Red lines (what blocks shipping)
+- Any critical-safety fail (any "1" on safety dimension in human eval).
+- <90% golden-set accuracy on automated layer.
+- Customer-name fabrication in last 30 days.
+- Cost >$0.50 per run.
+- P99 latency >5s on triage flow.
 
 ### Governance
-_Compliance · Safety · Reliability · Reputation._
+- Compliance: PII scrubber pre-LLM; GDPR DSR handler in /docs/dsr-runbook.md.
+- Safety: prompt-injection eval row in golden set; refusal on legal/contract content.
+- Reliability: 99.5% SLO; cached top-3 fallback if model is down.
+- Reputation: 2-hour incident-response playbook in /docs; canary deploys for every model swap.
 
 ---
 
 ## Build Insights
 
-- **Friction point.** _____
-- **Key learning.** _____
-- **Aha moment.** _____
-
----
-
-## Repo structure
-
-```
-juno-pm/
-├── README.md                          ← this dashboard + pitch
-├── 01-prompting/
-│   ├── system-prompt.md               ← M1: Juno's system prompt
-│   └── lovable-prototype.md           ← M1: prototype link + debrief
-├── 02-strategy/
-│   ├── decision-matrix.md             ← M2: build / buy / fine-tune / partner call
-│   └── strategy-one-pager.md          ← M2: AI strategy one-pager
-├── 03-rag-prd/
-│   └── prd.md                         ← M3: AI PRD with retrieval requirements
-├── 04-ai-ux/
-│   ├── user-flow.md                   ← M4: AI-native user flow
-│   └── trust-gaps.md                  ← M4: trust-gap mitigations
-├── 05-agentic-workflows/
-│   ├── awspec.md                      ← M5: Agent Workflow Spec
-│   └── agent-control-panel.md         ← M5: Agent Control Panel
-└── 06-evals/
-    ├── eval-stack.md                  ← M6: layered eval stack
-    └── human-rubric.md                ← M6: human evaluation rubric
-```
+- **Friction point.** Time and effort to developing and designing a AI PRD Harness.  Modules are changing through the course making it difficult to reconcile
+- **Key learning.** Always build and incorporate strategic guadrails - Governance must be at the core to mitigage liability and risk
+- **Aha moment.** System prompt sets the specific outputs that I would like to see OR it is already part of the Model to naturally do that
 
 ---
 
