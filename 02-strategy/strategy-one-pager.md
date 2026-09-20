@@ -2,15 +2,15 @@
 
 ## 1. Problem & Workflow
 
-The Problem: roadmap discussions at RocketShip are driven by the loudest voice in Slack rather than customer evidence. Priorities reverse weekly; stakeholder trust is eroding.
+The Problem: roadmap discussions at RocketShip are driven by the loudest voice in MS Teams or by volume of servicedesk tickets rather than customer evidence. Priorities are changed weekly; stakeholder trust is eroding.
 
-Prevention: Juno explicitly prevents 'opinion-driven prioritization' - the bad decision of moving a feature up the backlog because someone in #leadership posted strongly, instead of because the cited evidence outweighs the alternatives.
+Prevention: Juno explicitly prevents 'opinion-driven prioritization' - the bad decision of moving a feature up the backlog because someone in #leadership posted strongly or makes every request a priority, instead of because the cited evidence outweighs the alternatives.
 
 ## 2. Target Metrics
 
 Cycle time: reduce average weekly roadmap prioritization from 2 hours to 30 minutes (75% reduction).
 
-Leadership proof: under-10% rate of decisions reversed within 1 week, AND 90%+ of prioritised items have at least 2 cited sources from the corpus. Both metrics measurable in the first 30 days post-launch.
+Leadership proof: under-10% rate of decisions reversed within 2 weeks, AND 90%+ of prioritised items have at least 2 cited sources from the corpus. Both metrics measurable in the first 30 days post-launch.
 
 ## 3. Autonomy Level
 
@@ -20,7 +20,7 @@ Explicitly avoiding: Agent. Letting Juno move sprint priorities or shift live da
 
 ## 4. Data & Model Approach
 
-Approach: Ground (RAG). We will ground the model in the RocketShip corpus - Slack #escalations, support tickets, interview notes, Notion product pages, Jira tickets - so every priority cites a source ID.
+Approach: Ground (RAG). We will ground the model in the RocketShip corpus - MS Teams #escalations, servicedesk tickets, interview notes, Notion product pages, Jira tickets - so every priority cites a source ID.
 
 Explicitly avoiding: a generic LLM (Buy). Without RAG grounding, Juno would hallucinate plausible-sounding priorities and invent customer signals that don't exist - the failure mode that kills trust fastest.
 
