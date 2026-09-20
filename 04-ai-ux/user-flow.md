@@ -10,15 +10,15 @@ A new P0 customer transcript is uploaded to the "Raw Input" column in Juno (the 
 
 **What they see instantly**
 
-"Juno is reading your transcript…" status pill appears under the input column. Empty Insights and PRD columns dim to ~40% to signal the agent is working.
+"Juno is processing your transcript…" status pill appears under the input column. Empty Insights and PRD columns dim to ~40% to signal the agent is working.
 
 ## The flow
 
 1. 1. RAG retrieval over the RocketShip Strategy One-Pager (M3 KB), top-K = 6.
 2. Comparison logic, does the transcript pain point map to a strategic pillar?
 3. Risk + alignment scoring, emit P0-P3 with a strategic-rationale citation.
-4. Confidence check, score < 30 → notRecommended; score ≥ 70 → P0/P1.
-2. "Scanning Strategy One-Pager…" → "Cross-referencing 1 transcript with 4 strategic pillars…" → "Synthesising priorities + drafting PRD section…"
+4. Confidence check, score < 25 → notRecommended; score ≥ 70 → P0/P1.
+2. "Reviewing Strategy One-Pager…" → "Cross-referencing 1 transcript with 4 strategic pillars…" → "Synthesising priorities + drafting PRD section…"
 3. Path A (Strategy loaded) → grounded prioritization with citations.
 Path B (Strategy missing) → "Cautious mode", generic priorities tagged "low confidence" + nudge to load the strategy doc.
 
@@ -38,11 +38,11 @@ Every Insight Card has a "Manual Override" button → re-tag P0-P3, edit the rat
 
 **Training signal**
 
-Manual demote → logged as "strategic-alignment correction." 3+ similar overrides → flag the strategic pillar as ambiguous + tighten retrieval.
+Manual demote → logged as "Strategic Alignment Override." 3+ similar overrides → flag the strategic pillar as ambiguous + tighten retrieval.
 
 **Fail-safe**
 
-If RAG returns no match for a transcript pain → Juno tags the card "Outside current strategy" + amber warning. Never invents an alignment. PM can promote manually or send back for clarification.
+If RAG returns no match for a transcript pain → Juno tags the card "No Matching Strategy Found" + amber warning. Never invents an alignment. PM can promote manually or send back for clarification.
 
 ## Self-review
 
