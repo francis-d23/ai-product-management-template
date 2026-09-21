@@ -13,27 +13,27 @@ This repo is my final project for the AI Product Management Certification — **
 ## Module artefacts
 
 ### M1 · Prompting
-- **System prompt** — [`https://github.com/francis-d23/ai-product-management-template/tree/main/01-prompting`]
+- **System prompt** — [`01-prompting/system-prompt.md`](01-prompting/system-prompt.md)
 - **Prototype** — https://bright-juno-view-fd.lovable.app/
 
 ### M2 · Strategy
-- **Decision matrix** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/02-strategy/decision-matrix.md`]
-- **AI Strategy one-pager** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/02-strategy/strategy-one-pager.md`]
+- **Decision matrix** — [`02-strategy/decision-matrix.md`](02-strategy/decision-matrix.md)
+- **AI Strategy one-pager** — [`02-strategy/strategy-one-pager.md`](02-strategy/strategy-one-pager.md)
 
 ### M3 · RAG / AI PRD
-- **AI PRD** — [`https://github.com/francis-d23/ai-product-management-template/tree/main/03-rag-prd`]
+- **AI PRD** — [`03-rag-prd/prd.md`](03-rag-prd/prd.md)
 
 ### M4 · AI-Native UX
-- **AI user flow** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/04-ai-ux/user-flow.md`]
-- **Trust-gap mitigations** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/04-ai-ux/trust-gaps.md`]
+- **AI user flow** — [`04-ai-ux/user-flow.md`](04-ai-ux/user-flow.md)
+- **Trust-gap mitigations** — [`04-ai-ux/trust-gaps.md`](04-ai-ux/trust-gaps.md)
 
 ### M5 · Agentic Workflows
-- **Agent Workflow Spec (AWSpec)** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/05-agentic-workflows/awspec.md`]
-- **Agent Control Panel** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/05-agentic-workflows/agent-control-panel.md`]
+- **Agent Workflow Spec (AWSpec)** — [`05-agentic-workflows/awspec.md`](05-agentic-workflows/awspec.md)
+- **Agent Control Panel** — [`05-agentic-workflows/agent-control-panel.md`](05-agentic-workflows/agent-control-panel.md)
 
 ### M6 · Evals &amp; Guardrails
-- **Eval stack** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/06-evals/eval-stack.md`]
-- **Human evaluation rubric** — [`https://github.com/francis-d23/ai-product-management-template/blob/main/06-evals/human-rubric.md`]
+- **Eval stack** — [`06-evals/eval-stack.md`](06-evals/eval-stack.md)
+- **Human evaluation rubric** — [`06-evals/human-rubric.md`](06-evals/human-rubric.md)
 
 ---
 
