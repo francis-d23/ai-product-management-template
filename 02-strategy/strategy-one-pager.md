@@ -32,6 +32,6 @@ Mitigation: a hard 'evidence balance' eval gate - reject any priority list where
 
 ## 6. V1 Scope
 
-In: ranking the existing backlog with cited evidence; surfacing under-cited items; flagging conflicts between Slack escalations and Jira priorities.
+In: ranking the existing backlog with cited evidence; surfacing under-cited items; flagging conflicts between MS Teams escalations and Jira priorities.
 
 Out: (1) hiring or headcount decisions, (2) customer-facing comms about why a feature was deprioritised. Both stay 100% with the human PM.
