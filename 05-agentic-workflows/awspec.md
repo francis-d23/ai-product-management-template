@@ -30,13 +30,14 @@ New message in #escalations tagged P0 AND thread length >= 5 messages within 15 
 - salesforce.lookup_arr → {arr_usd, contract_end, churn_risk}.
 - jira.create_stub → {ticket_id, url, status}.
 - service.desk → {ticket_id, url, status, priority}.
+- MS.Teams → {id, url}.
   
 **Memory (in or out of scope)**
 
 - **Episodic:** In-scope, tool results, retrieved chunks, intermediate scores. Lifetime: end of run.
 - **Semantic:** In-scope, RocketShip strategic taxonomy + Juno system prompt + PM preferences. Lifetime: indefinite, refreshed weekly. Out of scope, do NOT persist customer-specific contracts or PII.
 - **Working:** In-scope, current thread, customer ID, ARR, retrieved KB chunks, current confidence score. Held in working context only.
-- **External:** MS Teams thread API (read), RocketShip Strategy KB (read), Salesforce ARR lookup (read), #pm-daily channel (write), Jira (write, stub creation only).
+- **External:** MS Teams thread API (read), Service Desk thread API (read), RocketShip Strategy KB (read), Salesforce ARR lookup (read), #pm-daily channel (write), Jira (write, stub creation only).
 
 ## Human-in-the-loop
 
