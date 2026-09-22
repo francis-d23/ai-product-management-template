@@ -56,7 +56,7 @@ This repo is my final project for the AI Product Management Certification — **
 - Per release: golden-set accuracy; format/citation/refusal pass rate.
 
 ### Red lines (what blocks shipping)
-- Any critical-safety fail (any "0" on safety dimension in human eval).
+- Any critical-safety fail (any "1" on safety dimension in human eval).
 - <90% golden-set accuracy on automated layer.
 - Customer-name fabrication in last 30 days.
 - Cost >$0.18 per run.
