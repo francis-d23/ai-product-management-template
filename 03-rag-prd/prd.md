@@ -11,8 +11,8 @@ RocketShip PMs need this handled: Juno will review reported support related issu
 | Surface | Specification |
 |---|---|
 | 01 Context | Required: RocketShip Strategy One-Pager (the M2 deliverable, the single authority) + Servicedesk tickets tagged P0/P1/P2 from the last 90… |
-| 02 Tools | Search_Servicedesk (query) - Read Read_Ticker (Servicedesk ID) - Read Read_thread (Servicedesk ID) - Read Draft _Opportunity Brief - Read… |
-| 03 Loop | two passes per batch for now |
+| 02 Tools | Search_Servicedesk (query) - Read Read_Ticker (Servicedesk ID) - Read Read_thread (Servicedesk ID) - Read Search_MS Teams (query) - Read… |
+| 03 Loop | 5 passes per batch for now |
 | 04 Memory | Per PM, per sprint. Juno remembers the rationale behind each ranking it produced this sprint, so it can explain a change rather than… |
 | 05 Permissions | read auto · draft auto · write confirm · send blocked |
 | 06 Verification | Every priority must cite at least one clause that appears verbatim in the strategy document loaded this session. |
@@ -34,16 +34,16 @@ Anything older than 48 hours is serviced without a "Potentially Stale" label.  I
 **The verb list**
 
 Search_Servicedesk (query) - Read
-Read_Ticket (Servicedesk_ID) - Read
-Read_thread (Servicedesk_ID) - Read
+Read_Ticker (Servicedesk ID) - Read
+Read_thread (Servicedesk ID) - Read
 Search_MS Teams (query) - Read
-Read_Ticket (MS Team_ID) - Read
-Read_thread (MS Team_ID) - Read
+Read_Ticker (MS Team_ ID) - Read
+Read_thread (MS Team_ ID) - Read
 Draft _Opportunity Brief - Write
 
 **Deliberate omissions**
 
-No notify_stakeholder() or post_to_slack(). Both are class SEND. A wrong priority in a draft costs a PM two minutes of reading. The same wrong priority broadcast to #product costs a week of politics, and you cannot unsend it.
+No notify_stakeholder() or post_to_MS Teams(). Both are class SEND. A wrong priority in a draft costs a PM two minutes of reading. The same wrong priority broadcast to #product costs a week of politics, and you cannot unsend it.
 
 No delete_ticket() or close_ticket(). Destructive, and nothing about prioritisation requires it.
 
