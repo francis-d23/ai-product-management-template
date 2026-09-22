@@ -34,12 +34,12 @@ Anything older than 48 hours is serviced without a "Potentially Stale" label.  I
 **The verb list**
 
 Search_Servicedesk (query) - Read
-Read_Ticker (Servicedesk ID) - Read
-Read_thread (Servicedesk ID) - Read
+Read_Ticker (Servicedesk_ID) - Read
+Read_thread (Servicedesk_ID) - Read
 Search_MS Teams (query) - Read
-Read_Ticker (MS Team_ ID) - Read
-Read_thread (MS Team_ ID) - Read
-Draft _Opportunity Brief - Write
+Read_Ticker (MS Team_ID) - Read
+Read_thread (MS Team_ID) - Read
+Draft_Opportunity Brief - Write
 
 **Deliberate omissions**
 
